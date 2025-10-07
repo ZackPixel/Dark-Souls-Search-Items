@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Souls Font";
+  src: url("font/OptimusPrincepsSemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Souls Font Bold";
+  src: url("font/OptimusPrinceps.ttf");
+}
+
+body {
+  background: linear-gradient(#000000, #2b2b2b);
+  min-width: 100wh;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.titolo {
+  font-family: "Souls Font";
+  text-align: center;
+  font-size: 100px;
+  -webkit-text-stroke: 1px;
+  color: white;
+  user-select: none;
+}
+
+.paragrafo {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  color: rgb(255, 255, 255);
+  max-width: 700px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+}
+
+input {
+  padding: 20px;
+  width: 450px;
+  font-size: 20px;
+  height: 45px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+input::placeholder {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+button {
+  display: inline-block;
+  padding: 13px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 5px #313131;
+  user-select: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+button:active {
+  box-shadow: 0 5px #262626;
+  transform: translateY(2px);
+}
+
+img {
+  width: 50px;
+  height: 55px;
+}
+
+.sigma {
+  display: flex;
+  align-items: center;
+}
+
+.sasso {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+}

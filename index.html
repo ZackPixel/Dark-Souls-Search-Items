@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dark Souls Items</title>
+    <title>Souls' Items Search</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="titolo">
-      Dark Souls<br />
-      Item Search
-    </h1>
+    <h1 class="titolo">Item Search</h1>
+
+    <h2 class="seuls">Dark Souls</h2>
 
     <div class="container">
       <div class="sigma">
@@ -24,7 +23,30 @@
           <img src="images/search-icon.png" alt="" />
         </button>
       </div>
-      <ul id="list"></ul>
+      <details>
+        <summary>Items</summary>
+        <ul id="list"></ul>
+      </details>
+    </div>
+
+    <h3 class="elden">Elden Ring</h3>
+
+    <div class="container">
+      <div class="sigma">
+        <input
+          id="searchbar2"
+          type="text"
+          name="search"
+          placeholder="Search Item..."
+        />
+        <button onclick="search_item2()">
+          <img src="images/search-icon.png" alt="" />
+        </button>
+      </div>
+      <details>
+        <summary>Items</summary>
+        <ul id="list2"></ul>
+      </details>
     </div>
 
     <script src="script.js"></script>

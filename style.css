@@ -13,11 +13,16 @@
   src: url("font/Mantinia\ Regular.otf");
 }
 
+html,
 body {
   background-color: black;
   min-width: 100wh;
   min-height: 100vh;
   margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .titolo {
@@ -101,6 +106,7 @@ button {
   user-select: none;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  transition: 0.3s;
 }
 
 button:active {
@@ -117,6 +123,25 @@ details {
   margin-top: 30px;
   font-size: 30px;
   user-select: none;
+  width: 600px;
+  color: white;
+
+  max-height: 60px; /* altezza chiusa */
+  overflow: hidden; /* nasconde contenuto extra */
+  transition: max-height 0.6s ease; /* animazione sia apertura che chiusura */
+}
+
+details[open] {
+  max-height: 500px; /* altezza aperta */
+  overflow-y: auto;
+}
+
+details[open]::-webkit-scrollbar {
+  display: none;
+}
+
+details[open] {
+  scrollbar-width: none; /* Firefox */
 }
 
 details:first-of-type summary::marker,

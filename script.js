@@ -243,7 +243,7 @@ let lista = [
   "Soul of Smough",
   "Guardian Soul",
   "Soul of Priscilla",
-];
+].sort((a, b) => a.localeCompare(b));
 
 let lista2 = [
   "Longsword",
@@ -539,7 +539,7 @@ let lista2 = [
   "Heide Armor",
   "Heide Gauntlets",
   "Heide Leggings",
-];
+].sort((a, b) => a.localeCompare(b));
 
 let lista3 = [
   "Estus Flask",
@@ -868,7 +868,7 @@ let lista3 = [
   "Soul of the Demon Prince",
   "Soul of Darkeater Midir",
   "Soul of Slave Knight Gael",
-];
+].sort((a, b) => a.localeCompare(b));
 
 let lista4 = [
   "Dagger",
@@ -2201,7 +2201,7 @@ let lista4 = [
   "Igon's Cookbook (2)",
   "Antiquity Scholar's Cookbook (1)",
   "Antiquity Scholar's Cookbook (2)",
-];
+].sort((a, b) => a.localeCompare(b));
 
 let searchbar = document.getElementById("searchbar");
 
@@ -2221,6 +2221,8 @@ function search_item() {
   input = input.toLowerCase();
   let x = document.getElementsByClassName("sasso");
   let found = false;
+
+  document.querySelector("#list").closest("details").setAttribute("open", "");
 
   if (list.querySelector("#notfound")) {
     list.innerHTML = "";
@@ -2263,6 +2265,8 @@ function search_item2() {
   let x = document.getElementsByClassName("sasso2");
   let found = false;
 
+  document.querySelector("#list2").closest("details").setAttribute("open", "");
+
   if (list2.querySelector("#notfound")) {
     list2.innerHTML = "";
     for (const element of lista2) {
@@ -2304,6 +2308,8 @@ function search_item3() {
   let x = document.getElementsByClassName("sasso3");
   let found = false;
 
+  document.querySelector("#list3").closest("details").setAttribute("open", "");
+
   if (list3.querySelector("#notfound")) {
     list3.innerHTML = "";
     for (const element of lista3) {
@@ -2344,6 +2350,8 @@ function search_item4() {
   input = input.toLowerCase();
   let x = document.getElementsByClassName("sasso4");
   let found = false;
+
+  document.querySelector("#list4").closest("details").setAttribute("open", "");
 
   if (list4.querySelector("#notfound")) {
     list4.innerHTML = "";
